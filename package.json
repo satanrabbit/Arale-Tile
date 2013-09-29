@@ -1,0 +1,30 @@
+{
+  "family": "arale",
+  "name": "tile",
+  "version": "1.0.0",
+  "description": "Base on Arale Flat Style Module --Tile",
+  "homepage": "https://github.com/SatanRabbit/tile",
+  "author": "SatanRabbit",
+  "maintainers": [
+    "SatanRabbit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SatanRabbit/tile.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [],
+  "licenses": "MIT",
+  "spm": {
+    "output": ["tile.js"],
+    "alias": {
+      "$": "$",
+      "widget": "arale/widget/1.1.1/widget",
+      "switchable":"arale/switchable/1.0.0/switchable"
+      },
+    "devAlias": {},
+    "engines": {}
+  }
+}
