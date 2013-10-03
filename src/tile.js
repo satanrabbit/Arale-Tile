@@ -2,9 +2,8 @@ define(function(require, exports, module) {
   
   var Widget = require('widget');
   var $ = require('$');
-  require('arale/easing/1.0.0/easing');
-  //依赖ui-tile样式
-  require('./tile.css'); 
+  require('arale/easing/1.0.0/easing'); 
+  require('./tile.css');
   var tile = Widget.extend({ 
   	
     attrs:{
@@ -82,10 +81,8 @@ define(function(require, exports, module) {
                   .addClass("ui-tile-content")
                   .append(item.content)
                 if(item.url){
-                  var url=item.url;
-                   $(_content).css('cursor','pointer').on('click',function(){
-                    location.href=url; 
-                  });
+                  var _url=item.url;
+                   $(_content).wrapInner("<a href="+_url+"></a>") ;
                 }
                 if(i!==0){
                   _content.hide();
@@ -97,7 +94,7 @@ define(function(require, exports, module) {
             //轮播动画
             var _contents=this.element.find('.ui-tile-content')
 
-            if (_contents.length>0){
+            if (_contents.length>1){
 
               var i=_contents.length-1;
                var _h=this.element.find('ui-tile-main').height;
@@ -118,27 +115,20 @@ define(function(require, exports, module) {
             //urls
             if(this.get('urls').tile){
               var _url=this.get('urls').tile; 
-              this.element.find('.ui-tile').css('cursor','pointer').on("click",function(){
-                location.href= _url;             
-              });
+              this.element.wrapInner("<a href="+_url+"></a>") ;
+              this.element.find('.ui-tile-icon').wrapInner("<a href="+_url+"></a>") ;//用于在icon时鼠标样式不是手型
             }
              if(this.get('urls').title){
               var _url=this.get('urls').title; 
-              this.element.find('.ui-tile-title').css('cursor','pointer').on("click",function(){
-                location.href= _url;               
-              });
+              this.element.find('.ui-tile-title').wrapInner("<a href="+_url+"></a>") ;
             }
              if(this.get('urls').bar){
               var _url=this.get('urls').bar; 
-              this.element.find('.ui-tile-bar').css('cursor','pointer').on("click",function(){
-                location.href= _url;               
-              });
+              this.element.find('.ui-tile-bar').wrapInner("<a href="+_url+"></a>") ;
             }
              if(this.get('urls').icon){
               var _url=this.get('urls').icon; 
-              this.element.find('.ui-tile-icon').css('cursor','pointer').on("click",function(){
-                location.href= _url;
-              });
+              this.element.find('.ui-tile-icon').wrapInner("<a href="+_url+"></a>") ;
             }
     },
     events: {

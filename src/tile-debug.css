@@ -24,6 +24,15 @@
   font-size: 12px;
   font-family: "Microsoft yahei", "微软雅黑", "幼圆", "黑体", "Tahoma", "Verdana", "Arial", "sans-serif";
 }
+.ui-tile a {
+  color: #ecf0f1;
+}
+.ui-tile a:link {
+  color: #ecf0f1;
+}
+.ui-tile a:hover {
+  color: #ecf0f1;
+}
 .ui-tile .ui-tile-title {
   position: relative;
   height: 30px;
@@ -108,22 +117,32 @@
 .ui-tile-title-left .ui-tile-bar {
   display: none;
 }
-.ui-tile-color-midnight-blue {
+.ui-tile-color-midnight-blue,
+.ui-tile-main-midnight-blue {
   background-color: #2c3e50;
 }
-.ui-tile-color-belize-hole {
+.ui-tile-color-belize-hole,
+.ui-tile-main-belize-hole {
   background-color: #2980b9;
 }
-.ui-tile-color-wet-asphalt {
+.ui-tile-color-wet-asphalt,
+.ui-tile-main-wet-asphalt {
   background-color: #34495e;
 }
-.ui-tile-color-amethyst {
+.ui-tile-color-amethyst,
+.ui-tile-main-amethyst {
   background-color: #9b59b6;
 }
-.ui-tile-color-wisteria {
+.ui-tile-color-wisteria,
+.ui-tile-main-wisteria {
   background-color: #8e44ad;
 }
-.ui-tile-color-alizarin {
+.ui-tile-color-alizarin,
+.ui-tile-main-alizarin {
   background-color: #e74c3c;
+}
+.ui-tile-color-clouds,
+.ui-tile-main-clouds {
+  background-color: #ecf0f1;
 }
 /*****sr-tile styel end***/

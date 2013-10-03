@@ -3,14 +3,15 @@
   "name": "tile",
   "version": "1.0.0",
   "description": "Base on Arale Flat Style Module --Tile",
-  "homepage": "https://github.com/SatanRabbit/tile",
+  "homepage": "https://github.com/satanrabbit/Arale-Tile",
   "author": "SatanRabbit",
   "maintainers": [
     "SatanRabbit"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/SatanRabbit/tile.git"
+    
+    "url": "https://github.com/satanrabbit/Arale-Tile"
   },
   "bugs": {
     "url": ""
