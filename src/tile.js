@@ -8,7 +8,6 @@ define(function(require, exports, module) {
   	
     attrs:{
       template: require('./tile.tpl'),
-      haver_thame:'ui-tile-color-wisteria',
       width:null,
       title_left:false,
       bar:null,
@@ -17,6 +16,7 @@ define(function(require, exports, module) {
       icon:null,
       main_thame:null,
       bar_tip:null,
+      hover_thame:'ui-tile-color-wisteria',
       urls:{
         tile:null,
         title:null,
@@ -133,10 +133,10 @@ define(function(require, exports, module) {
     },
     events: {
         "mouseover .ui-tile": function(){
-          this.element.addClass(this.get('haver_thame'));
+          this.element.addClass(this.get('hover_thame'));
         },
         "mouseout .ui-tile": function(){
-          this.element.removeClass(this.get('haver_thame'));
+          this.element.removeClass(this.get('hover_thame'));
           if(this.get('thame')){
             this.element.addClass('ui-tile-main-'+this.get('thame'));
           }

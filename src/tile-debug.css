@@ -26,12 +26,14 @@
 }
 .ui-tile a {
   color: #ecf0f1;
+  cursor: pointer;
 }
 .ui-tile a:link {
   color: #ecf0f1;
 }
 .ui-tile a:hover {
   color: #ecf0f1;
+  text-decoration: none;
 }
 .ui-tile .ui-tile-title {
   position: relative;
@@ -59,13 +61,15 @@
   overflow: hidden;
 }
 .ui-tile .ui-tile-main .ui-tile-icon {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   position: absolute;
+  top: 10px;
+  left: 10px;
 }
 .ui-tile .ui-tile-main .ui-tile-icon i {
   line-height: 1em;
-  font-size: 75px;
+  font-size: 50px;
   display: block;
   text-align: center;
 }
@@ -73,6 +77,9 @@
   height: 80px;
   position: absolute;
   left: 80px;
+}
+.ui-tile .ui-tile-main .ui-tile-content a:hover {
+  text-decoration: underline;
 }
 .ui-tile-main-only .ui-tile-title {
   display: none;
@@ -133,10 +140,6 @@
 .ui-tile-main-amethyst {
   background-color: #9b59b6;
 }
-.ui-tile-color-wisteria,
-.ui-tile-main-wisteria {
-  background-color: #8e44ad;
-}
 .ui-tile-color-alizarin,
 .ui-tile-main-alizarin {
   background-color: #e74c3c;
@@ -145,4 +148,57 @@
 .ui-tile-main-clouds {
   background-color: #ecf0f1;
 }
-/*****sr-tile styel end***/
+.ui-tile-color-emerald,
+.ui-tile-main-emerald {
+  background-color: #2ecc71;
+}
+.ui-tile-color-green-sea,
+.ui-tile-main-green-sea {
+  background-color: #16a085;
+}
+.ui-tile-color-pumpkin,
+.ui-tile-main-pumpkin {
+  background-color: #e67e22;
+}
+.ui-tile-color-wisteria,
+.ui-tile-main-wisteria {
+  background-color: #8e44ad;
+}
+/*****/
+.ui-tile-color-midnight-blue-hover,
+.ui-tile-main-midnight-blue-hover {
+  background-color: #2c3e50;
+}
+.ui-tile-color-belize-hole-hover,
+.ui-tile-main-belize-hole-hover {
+  background-color: #2980b9;
+}
+.ui-tile-color-wet-asphalt-hover,
+.ui-tile-main-wet-asphalt-hover {
+  background-color: #34495e;
+}
+.ui-tile-color-amethyst-hover,
+.ui-tile-main-amethyst-hover {
+  background-color: #9b59b6;
+}
+.ui-tile-color-wisteria-hover,
+.ui-tile-main-wisteria-hover {
+  background-color: #8e44ad;
+}
+.ui-tile-color-alizarin-hover,
+.ui-tile-main-alizarin-hover {
+  background-color: #e74c3c;
+}
+.ui-tile-color-clouds-hover,
+.ui-tile-main-clouds-hover {
+  background-color: #ecf0f1;
+}
+.ui-tile-color-emerald-hover,
+.ui-tile-main-emerald-hover {
+  background-color: #2ecc71;
+}
+.ui-tile-color-green-sea-hover,
+.ui-tile-main-green-sea-hover {
+  background-color: #16a085;
+}
+/*****sr-tile styel end  ***/

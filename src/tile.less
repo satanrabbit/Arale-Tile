@@ -1,0 +1,187 @@
+
+/* alice.tile 样式模块 */
+
+@color-peter-river:#3498db;
+@color-belize-hole:#2980b9;
+@color-wet-asphalt: #34495e; 
+@color-midnight-blue: #2c3e50;
+@color-amethyst: #9b59b6;
+@color-wisteria: #8e44ad;
+@color-alizarin: #e74c3c;
+@color-pomegranate: #c0392b;
+@color-clouds: #ecf0f1;
+@color-silver: #ecf0f1;
+@color-sun-flawer: #f1c40f;
+@color-orange:#f39c12;
+@color-carrot: #e67e22;
+@color-pumpkin: #e67e22;
+@color-turquoise: #1abc9c;
+@color-green-sea: #16a085;
+@color-emerald: #2ecc71;
+@color-nephritis: #27ae60;
+@color-concrete: #95a5a6;
+@color-asbestos: #7f8c8d;
+
+
+@font-face {
+  font-family: 'fontello';
+  src: url('font/fontello.eot');
+  src: url('font/fontello.eot#iefix') format('embedded-opentype'),
+       url('font/fontello.woff') format('woff'),
+       url('font/fontello.ttf') format('truetype'),
+       url('font/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.iconfont {
+    font-family: "fontello";
+    font-style: normal;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*****ui-tile styel*******/
+.ui-tile {
+    width: 220px;
+    display:block;
+    position: relative;
+    background-color: @color-pomegranate;
+    margin: 10px 0 10px 10px;
+    color: @color-clouds;
+    font-size: 12px;
+    font-family:"Microsoft yahei","微软雅黑","幼圆", "黑体","Tahoma","Verdana","Arial","sans-serif";
+
+    a{
+      color:@color-clouds; 
+      cursor:pointer;
+      text-decoration:none;
+    }
+    a:link{
+      color:@color-clouds; 
+    }
+    a:hover{
+      color:@color-clouds; 
+    }
+    .ui-tile-title {
+        position: relative;
+        height: 30px;
+        line-height: 28px;  
+        display:block; 
+        font-size:14px; 
+        font-weight:500; 
+        letter-spacing:5px;
+        padding-left: 20px;
+    }
+
+    .ui-tile-bar {
+        height: 30px;
+        line-height: 28px; 
+        position: relative;
+        .ui-tile-bar-tip{
+            position: absolute;
+            right: 15px;
+            top: 0;
+        }
+    }
+
+    .ui-tile-main {
+        position: relative;
+        height: 80px;
+        overflow:hidden;
+
+        .ui-tile-icon {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top:10px;
+            left:10px;
+        }
+        .ui-tile-icon i{
+            line-height: 1em;
+            font-size: 50px;
+            display: block;
+            text-align: center;
+        }
+
+        .ui-tile-content {
+            height: 80px;
+            position: absolute;
+            left: 80px;
+        }
+
+    }
+}
+.ui-tile-main-only{
+    .ui-tile-title{
+        display: none;
+    }
+    .ui-tile-bar{display: none;}
+    .ui-tile-main{
+        height: 110px;
+         .ui-tile-icon {
+            top: 15px;
+        }
+        .ui-tile-content {
+            height: 110px;}
+        }
+}
+.ui-tile-icon-none{
+    .ui-tile-main {
+        .ui-tile-icon{display: none;}
+        .ui-tile-content{
+            left: 0;
+        }
+    }
+}
+.ui-tile-title-left{
+    overflow: hidden;
+    .ui-tile-title{
+        height: 80px;
+        width: 25px;
+        margin: 0 ;
+        padding:15px 0 0 0 ;
+        position: absolute;
+        line-height: 20px;
+        left:10px;
+    }
+    .ui-tile-main{
+        margin-left: 30px;
+        height: 110px;
+        .ui-tile-icon {
+            top: 15px;
+        }
+    }
+    .ui-tile-bar{
+        display: none;
+    }
+}
+.ui-tile-thame(@color){
+    background-color: @color;
+}
+.ui-tile-color-midnight-blue ,.ui-tile-main-midnight-blue{
+   .ui-tile-thame(@color-midnight-blue) ;
+}
+.ui-tile-color-belize-hole,.ui-tile-main-belize-hole {
+   .ui-tile-thame(@color-belize-hole) ;
+}
+.ui-tile-color-wet-asphalt ,.ui-tile-main-wet-asphalt {
+   .ui-tile-thame(@color-wet-asphalt) ;
+}
+.ui-tile-color-amethyst,.ui-tile-main-amethyst {
+   .ui-tile-thame(@color-amethyst) ;
+}
+.ui-tile-color-wisteria,.ui-tile-main-wisteria {
+   .ui-tile-thame(@color-wisteria) ;
+}
+.ui-tile-color-alizarin ,.ui-tile-main-alizarin {
+   .ui-tile-thame(@color-alizarin);
+}
+
+.ui-tile-color-clouds ,.ui-tile-main-clouds {
+   .ui-tile-thame(@color-clouds);
+}
+.ui-tile-color-emerald ,.ui-tile-main-emerald {
+   .ui-tile-thame(@color-emerald);
+}
+/*****sr-tile styel end***/
